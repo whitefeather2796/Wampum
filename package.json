@@ -32,6 +32,6 @@
     "mocha": "^2.5.3"
   },
   "dependencies": {
-    "truffle": "^5.7.3"
+    "truffle": "^5.10.1"
   }
 }
