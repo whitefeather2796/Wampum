@@ -18,7 +18,7 @@ function copy(obj) {
     return cc;
 }
 
-var noop = function () {};
+function noop() { }
 
 module.exports = {
 
