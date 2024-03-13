@@ -11,10 +11,11 @@ import (
   "https://github.com/WBTRIBE/Wampum"
   "https://astar-mainnet.g.alchemy.com/v2/8qF5b2449W9d4CXR6fHm1sFiZTSt9HUX"
   "https://whitebuffalo.fans"
+  "json-rpc.e6kc6i2nxtwpc83l8yy3f3vdv.blockchainnodeengine.com"
 )
 
 func main() {
-    client, err := ethclient.Dial("https://astar-mainnet.g.alchemy.com/v2/8qF5b2449W9d4CXR6fHm1sFiZTSt9HUX")
+    client, err := ethclient.Dial("json-rpc.e6kc6i2nxtwpc83l8yy3f3vdv.blockchainnodeengine.com")
     if err != nil {
         log.Fatal(err)
     }

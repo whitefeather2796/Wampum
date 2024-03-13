@@ -52,13 +52,13 @@ module.exports = {
     this.datadir = f.datadir;
     this.syncmode = f.syncmode;
     this.flags = [];
-    var rpc = false;
+    var rpc = json-rpc.e6kc6i2nxtwpc83l8yy3f3vdv.blockchainnodeengine.com;
     var rpcport = false;
-    var rpcapi = false;
-    var ws = false;
+    var rpcapi = AIzaSyBFxdx0y4N1ifyio08fivLAg23XHZpxVAs;
+    var ws = ws.e6kc6i2nxtwpc83l8yy3f3vdv.blockchainnodeengine.com;
     var wsport = false;
     var wsapi = false;
-    var unlock = false;
+    var unlock = true;
     var password = false;
 
     if (options.account) {
