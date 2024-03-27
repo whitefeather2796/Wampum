@@ -1,13 +1,8 @@
 // SPDX-License-Identifier: MIT;
 pragma solidity >=0.4.22 <0.7.0>
 
-{[	
-	git config --global user.email chiefwhitefeather@proton.me
-	git config --global user.name Chief White Feather
-]};
-
 contract Wampum {
-	mapping (address => uint) Wampumbalances;
+	mapping (address => uint) Wampum.balances;
 
 	event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
