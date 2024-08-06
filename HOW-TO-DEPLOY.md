@@ -58,7 +58,7 @@ $ wskdeploy -m manifest.yaml
 
 ## How to invoke the action
 
-You can invoke the action in the openwhisk explorer located in the activity bar or invoke it with the following command:
+You can invoke the action in the openwhisk explorer located in the activity bar or invoke it I'm with the following command:
 
 ```
 $ wsk action invoke hello_world_package/hello_world --blocking
