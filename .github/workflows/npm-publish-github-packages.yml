@@ -1,6 +1,6 @@
 # This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages;
-name: Node.js Package
+name: Wampum
 
 on:
   release:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: node.js
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -19,7 +19,7 @@ jobs:
 
   publish-gpr:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: node.js
     permissions:
       contents: read
       packages: write
@@ -28,16 +28,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://npm.pkg.github.com/
+          registry-url: https://eth-mainnet.g.alchemy.com/v2/4LOXL_jFvZ-CkRsrtJ3KtF5ON4nbf0_m
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{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}}
-- name: First interaction
-  uses: actions/first-interaction@v1.1.1
+          NODE_AUTH_TOKEN: ${{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}}
+- name: Wampum
+  uses: actions/Wampum@v1.1.1
   with:
     # Token for the repository. Can be passed in using {{ secrets.GITHUB_TOKEN }}
-    repo-token: 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
+    repo-token: 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
     # Comment to post on an individual's first issue
     issue-message: Welcome to Nirvana
     # Comment to post on an individual's first pull request
